@@ -1,0 +1,685 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>obolon84 Card Collection</title>
+<link rel="stylesheet" type="text/css" href="css/reset-fonts-grids.css">
+<link rel="stylesheet" type="text/css" href="css/base.css">
+<link rel="stylesheet" type="text/css" href="css/custom.css">
+<script type="text/javascript" language="Javascript" src="css/jquery-1.4.1.min.js"></script> 
+	<script type="text/javascript">  
+	$(document).ready(function()
+	{
+		$("#collFlown tr:odd").addClass("odd");
+		$("#collFlown tr:not(.odd)").hide();
+		$("#collFlown tr:first-child").show();
+		$("#collKLM tr:odd").addClass("odd");
+		$("#collKLM tr:not(.odd)").hide();
+		$("#collKLM tr:first-child").show();
+		$("#collWorld tr:odd").addClass("odd");
+		$("#collWorld tr:not(.odd)").hide();
+		$("#collWorld tr:first-child").show();
+		$("#collUncat tr:odd").addClass("odd");
+		$("#collUncat tr:not(.odd)").hide();
+		$("#collUncat tr:first-child").show();
+	
+		$(".planeList tr.odd").click(function(){
+			$(this).next("tr").toggle();
+			$(this).find(".arrow").toggleClass("up");
+			if(  $(this).next("tr").is(":visible") == true )
+			{this.style.borderBottom = '1px dashed #f1f1f1';this.style.backgroundColor = '#f1f1f1';}
+			else{this.style.borderBottom = '1px dashed #ddbd5e';this.style.backgroundColor = '#fffffc';}
+		});
+	});
+    </script>        
+</head>
+<body>
+<div id="top-black-bar"></div>
+<div id="doc3" class="yui-t5">
+	<div id="hd">
+		<!-- PUT MASTHEAD CODE HERE -->
+		<div id="hd-background">
+			<img src="site-graphics/OMASkyline.png"/>
+			<ul id="hd-nav">
+			</ul>
+		</div>
+	</div>
+	<div id="bd">
+		<div id="yui-main">
+			<div class="yui-b">
+				<!-- PUT MAIN COLUMN CODE HERE -->
+				<div id="mainwindow-pane">
+				<div id="mainwindow-container">	
+					<div id="airplaneTable">
+
+					<div id="collection-totals">Flown Planes</div>	
+					<table id="collFlown" class="planeList">
+					<tr>
+						<th class="wideCol">Date/Airline</th>
+						<th class="wideCol">Make/Model</th>
+						<th class="narrowCol">Registration</th>
+						<th class="narrowCol">Manufacturer</th>
+						<th class="arrowCol"></th>
+					</tr>
+					<tr class="planeEntry">
+						<td>5.27.94 Finnair</td>
+						<td>McDonnell Douglas MD-11</td>
+						<td>OH-LGA</td>
+						<td>Dragon Wings</td>
+						<td><div class="arrow"></div></td>
+					</tr>
+					<tr class="planeDetail">
+						<td colspan="5">
+							<div class="left"><img src="site-graphics/plane/flags/finland.png"/>May 27th, 1994<br/>HEL - JFK</div>		
+							<div class="center"><img src="site-graphics/plane/airline/finnair1990.png"/><br/>1990s colors</div>
+							<div class="right"><img src="site-graphics/plane/photo/finnairMD11.png"/></div>
+						</td>
+					</tr>
+					<tr class="planeEntry">
+						<td>5.27.94 Continental Airlines</td>
+						<td>Boeing 737-224</td>
+						<td>N14233</td>
+						<td>Aeroclassics</td>
+						<td><div class="arrow"></div></td>
+					</tr>
+					<tr class="planeDetail">
+						<td colspan="5">
+							<div class="left"><img src="site-graphics/plane/flags/usa.png"/>May 27th, 1994<br/>EWR - STL</div>		
+							<div class="center"><img src="site-graphics/plane/airline/continental1991.png"/><br/>1991 colors</div>
+							<div class="right"><img src="site-graphics/plane/photo/continentalB737200.png"/></div>
+						</td>
+					</tr>
+					<tr class="planeEntry">
+						<td>5.27.94 Trans World Airlines</td>
+						<td>Boeing 727-231</td>
+						<td>N54336</td>
+						<td>Gemini Jets</td>
+						<td><div class="arrow"></div></td>
+					</tr>
+					<tr class="planeDetail">
+						<td colspan="5">
+							<div class="left"><img src="site-graphics/plane/flags/usa.png"/>May 27th, 1994<br/>STL - OMA</div>		
+							<div class="center"><img src="site-graphics/plane/airline/twa1980.png"/><br/>1980s colors</div>
+							<div class="right"><img src="site-graphics/plane/photo/twaB727.png"/></div>
+						</td>
+					</tr>
+					<tr class="planeEntry">
+						<td>7.5.14 Frontier Airlines</td>
+						<td>Airbus 319-111</td>
+						<td>N905FR</td>
+						<td>Dragon Wings</td>
+						<td><div class="arrow"></div></td>
+					</tr>
+					<tr class="planeDetail">
+						<td colspan="5">
+							<div class="left"><img src="site-graphics/plane/flags/usa.png"/>July 5th, 2014<br/>OMA - DEN</div>		
+							<div class="center"><img src="site-graphics/plane/airline/frontier.png"/><br/>2000 colors</div>
+							<div class="right"><img src="site-graphics/plane/photo/frontierA319Seal.png"/></div>
+						</td>
+					</tr>
+					<tr class="planeEntry">
+						<td>6.29.15 United Express / Gojet</td>
+						<td>Bombardier CRJ-700</td>
+						<td>N701SK</td>
+						<td>Gemini Jets</td>
+						<td><div class="arrow"></div></td>
+					</tr>
+					<tr class="planeDetail">
+						<td colspan="5">
+							<div class="left"><img src="site-graphics/plane/flags/usa.png"/>June 6th, 2015<br/>OMA - ORD</div>		
+							<div class="center"><img src="site-graphics/plane/airline/unitedexpress2011.png"/><br/>2011 colors</div>
+							<div class="right"><img src="site-graphics/plane/photo/unitedCRJ700.png"/></div>
+						</td>
+					</tr>
+					<tr class="planeEntry">
+						<td>6.29.15 American Eagle / Envoy</td>
+						<td>Bombardier CRJ-700</td>
+						<td>N505AE</td>
+						<td>Gemini Jets</td>
+						<td><div class="arrow"></div></td>
+					</tr>
+					<tr class="planeDetail">
+						<td colspan="5">
+							<div class="left"><img src="site-graphics/plane/flags/usa.png"/>June 29th 2015<br/>ORD - OMA</div>		
+							<div class="center"><img src="site-graphics/plane/airline/american2013.png"/><br/>2013 colors</div>
+							<div class="right"><img src="site-graphics/plane/photo/americanCRJ700.png"/></div>
+						</td>
+					</tr>
+					</table>
+					
+					<br/>
+					<div id="collection-totals">Koninklijke Luchtvaart Maatschappij N.V.</div>						
+					<table id="collKLM" class="planeList">
+					<tr>
+						<th class="wideCol">Airline/Service Entry</th>
+						<th class="wideCol">Make/Model</th>
+						<th class="narrowCol">Registration</th>
+						<th class="narrowCol">Manufacturer</th>
+						<th class="arrowCol"></th>
+					</tr>
+					<tr class="planeEntry">
+						<td>KLM 1936</td>
+						<td>Douglas DC-3 / C-47A</td>
+						<td>PH-PBA</td>
+						<td>Gemini Jets</td>
+						<td><div class="arrow"></div></td>
+					</tr>
+					<tr class="planeDetail">
+						<td colspan="5">
+							<div class="left"><img src="site-graphics/plane/flags/netherlands.png"/>1936 - 1964</div>		
+							<div class="center"><img src="site-graphics/plane/airline/klm1961.png"/><br/>1950s colors</div>
+							<div class="right"><img src="site-graphics/plane/photo/klmDC3.png"/></div>
+						</td>
+					</tr>
+					<tr class="planeEntry">
+						<td>KLM 1953</td>
+						<td>Convair CV-340-48</td>
+						<td>PH-CGG</td>
+						<td>JC Wings</td>
+						<td><div class="arrow"></div></td>
+					</tr>
+					<tr class="planeDetail">
+						<td colspan="5">
+							<div class="left"><img src="site-graphics/plane/flags/netherlands.png"/>1953 - 1964</div>		
+							<div class="center"><img src="site-graphics/plane/airline/klm1961.png"/><br/>1950s colors</div>
+							<div class="right"><img src="site-graphics/plane/photo/klmCV340.png"/></div>
+						</td>
+					</tr>
+					<tr class="planeEntry">
+						<td>KLM 1959</td>
+						<td>Lockheed L-188C Electra</td>
+						<td>PH-LLD</td>
+						<td>Jet-X</td>
+						<td><div class="arrow"></div></td>
+					</tr>
+					<tr class="planeDetail">
+						<td colspan="5">
+							<div class="left"><img src="site-graphics/plane/flags/netherlands.png"/>1959 - 1969</div>		
+							<div class="center"><img src="site-graphics/plane/airline/klm1961.png"/><br/>1960s colors</div>
+							<div class="right"><img src="site-graphics/plane/photo/klmL188.png"/></div>
+						</td>
+					</tr>
+					<tr class="planeEntry">
+						<td>KLM 1961</td>
+						<td>Douglas DC-8-53</td>
+						<td>PH-DCI</td>
+						<td>Gemini Jets</td>
+						<td><div class="arrow"></div></td>
+					</tr>
+					<tr class="planeDetail">
+						<td colspan="5">
+							<div class="left"><img src="site-graphics/plane/flags/netherlands.png"/>1961 - 1977</div>		
+							<div class="center"><img src="site-graphics/plane/airline/klm1961.png"/><br/>1980s colors</div>
+							<div class="right"><img src="site-graphics/plane/photo/klmDC850.png"/></div>
+						</td>
+					</tr>
+					<tr class="planeEntry">
+						<td>KLM 1966</td>
+						<td>Douglas DC-9-15</td>
+						<td>PH-DNC</td>
+						<td>Gemini Jets</td>
+						<td><div class="arrow"></div></td>
+					</tr>
+					<tr class="planeDetail">
+						<td colspan="5">
+							<div class="left"><img src="site-graphics/plane/flags/netherlands.png"/>1966 - 1984</div>		
+							<div class="center"><img src="site-graphics/plane/airline/klm1961.png"/><br/>1980s colors</div>
+							<div class="right"><img src="site-graphics/plane/photo/klmDC915.png"/></div>
+						</td>
+					</tr>
+					<tr class="planeEntry">
+						<td>KLM 1968</td>
+						<td>BAC 111-301</td>
+						<td>D-ATPJ</td>
+						<td>JC Wings</td>
+						<td><div class="arrow"></div></td>
+					</tr>
+					<tr class="planeDetail">
+						<td colspan="5">
+							<div class="left"><img src="site-graphics/plane/flags/netherlands.png"/>1968 - 1968</div>		
+							<div class="center"><img src="site-graphics/plane/airline/klm1961.png"/><br/>1960s colors</div>
+							<div class="right"><img src="site-graphics/plane/photo/klmBAC111.png"/></div>
+						</td>
+					</tr>
+					<tr class="planeEntry">
+						<td>KLM 1972</td>
+						<td>McDonnell Douglas DC-10-30</td>
+						<td>PH-DTA</td>
+						<td>Gemini Jets</td>
+						<td><div class="arrow"></div></td>
+					</tr>
+					<tr class="planeDetail">
+						<td colspan="5">
+							<div class="left"><img src="site-graphics/plane/flags/netherlands.png"/>1972 - 1995</div>		
+							<div class="center"><img src="site-graphics/plane/airline/klm1961.png"/><br/>1970s colors</div>
+							<div class="right"><img src="site-graphics/plane/photo/klmDC1030.png"/></div>
+						</td>
+					</tr>
+					<tr class="planeEntry">
+						<td>KLM 1983</td>
+						<td>Airbus A310-203</td>
+						<td>PH-AGG</td>
+						<td>Jet-X</td>
+						<td><div class="arrow"></div></td>
+					</tr>
+					<tr class="planeDetail">
+						<td colspan="5">
+							<div class="left"><img src="site-graphics/plane/flags/netherlands.png"/>1983 - 1997</div>		
+							<div class="center"><img src="site-graphics/plane/airline/klm1971.png"/><br/>1980s colors KLM/NW</div>
+							<div class="right"><img src="site-graphics/plane/photo/klmA310.png"/></div>
+						</td>
+					</tr>
+					<tr class="planeEntry">
+						<td>KLM 1988</td>
+						<td>Boeing 737-2T5</td>
+						<td>PH-TVX</td>
+						<td>JC Wings</td>
+						<td><div class="arrow"></div></td>
+					</tr>
+					<tr class="planeDetail">
+						<td colspan="5">
+							<div class="left"><img src="site-graphics/plane/flags/netherlands.png"/>1988 - 1994</div>		
+							<div class="center"><img src="site-graphics/plane/airline/klm1971.png"/><br/>1980s colors KLM/NW</div>
+							<div class="right"><img src="site-graphics/plane/photo/klmB737200.png"/></div>
+						</td>
+					</tr>
+					<tr class="planeEntry">
+						<td>KLM 1993</td>
+						<td>McDonnell Douglas MD-11</td>
+						<td>PH-KCB</td>
+						<td>Phoenix</td>
+						<td><div class="arrow"></div></td>
+					</tr>
+					<tr class="planeDetail">
+						<td colspan="5">
+							<div class="left"><img src="site-graphics/plane/flags/netherlands.png"/>1993 - 2014</div>		
+							<div class="center"><img src="site-graphics/plane/airline/klm1971.png"/><br/>2003 colors</div>
+							<div class="right"><img src="site-graphics/plane/photo/klmMD11.png"/></div>
+						</td>
+					</tr>
+					<tr class="planeEntry">
+						<td>KLM 1999</td>
+						<td>Boeing 737-806WL</td>
+						<td>PH-GXZ</td>
+						<td>Gemini Jets</td>
+						<td><div class="arrow"></div></td>
+					</tr>
+					<tr class="planeDetail">
+						<td colspan="5">
+							<div class="left"><img src="site-graphics/plane/flags/netherlands.png"/>1999 - Pres</div>		
+							<div class="center"><img src="site-graphics/plane/airline/klm1991.png"/><br/>2015 colors</div>
+							<div class="right"><img src="site-graphics/plane/photo/klmB737800.png"/></div>
+						</td>
+					</tr>
+					<tr class="planeEntry">
+						<td>KLM 2005</td>
+						<td>Airbus A330-203</td>
+						<td>PH-AOE</td>
+						<td>Gemini Jets</td>
+						<td><div class="arrow"></div></td>
+					</tr>
+					<tr class="planeDetail">
+						<td colspan="5">
+							<div class="left"><img src="site-graphics/plane/flags/netherlands.png"/>2005 - Pres</div>		
+							<div class="center"><img src="site-graphics/plane/airline/klm1991.png"/><br/>2003 colors</div>
+							<div class="right"><img src="site-graphics/plane/photo/klmA330200.png"/></div>
+						</td>
+					</tr>
+					<tr class="planeEntry">
+						<td>KLM 2008</td>
+						<td>Boeing 777-306ER</td>
+						<td>PH-BVK</td>
+						<td>Witty Wings</td>
+						<td><div class="arrow"></div></td>
+					</tr>
+					<tr class="planeDetail">
+						<td colspan="5">
+							<div class="left"><img src="site-graphics/plane/flags/netherlands.png"/>2008 - Pres</div>		
+							<div class="center"><img src="site-graphics/plane/airline/klm1991.png"/><br/>2003 colors</div>
+							<div class="right"><img src="site-graphics/plane/photo/klmB777300.png"/></div>
+						</td>
+					</tr>
+					<tr class="planeEntry">
+						<td>KLM 2015</td>
+						<td>Boeing 787-906</td>
+						<td>PH-BHA</td>
+						<td>Gemini Jets</td>
+						<td><div class="arrow"></div></td>
+					</tr>
+					<tr class="planeDetail">
+						<td colspan="5">
+							<div class="left"><img src="site-graphics/plane/flags/netherlands.png"/>2015 - Pres</div>		
+							<div class="center"><img src="site-graphics/plane/airline/klm1991.png"/><br/>2015 colors</div>
+							<div class="right"><img src="site-graphics/plane/photo/klmB787900.png"/></div>
+						</td>
+					</tr>
+					<tr class="planeEntry">
+						<td>KLM Cityhopper 1996</td>
+						<td>Fokker F.28-0070</td>
+						<td>PH-KZU</td>
+						<td>Gemini Jets</td>
+						<td><div class="arrow"></div></td>
+					</tr>
+					<tr class="planeDetail">
+						<td colspan="5">
+							<div class="left"><img src="site-graphics/plane/flags/netherlands.png"/>1996 - Pres</div>		
+							<div class="center"><img src="site-graphics/plane/airline/klmcityhopper2010.png"/><br/>2014 colors</div>
+							<div class="right"><img src="site-graphics/plane/photo/klmF70.png"/></div>
+						</td>
+					</tr>
+					<tr class="planeEntry">
+						<td>KLM Cityhopper 2008</td>
+						<td>Embraer ERJ-190-100</td>
+						<td>PH-EZP</td>
+						<td>Gemini Jets</td>
+						<td><div class="arrow"></div></td>
+					</tr>
+					<tr class="planeDetail">
+						<td colspan="5">
+							<div class="left"><img src="site-graphics/plane/flags/netherlands.png"/>2008 - Pres</div>		
+							<div class="center"><img src="site-graphics/plane/airline/klmcityhopper2010.png"/><br/>2003 colors</div>
+							<div class="right"><img src="site-graphics/plane/photo/klmERJ190.png"/></div>
+						</td>
+					</tr>
+					</table>
+					
+					<br/>					
+					<div id="collection-totals">Worldwide Airlines</div>						
+					<table id="collWorld" class="planeList">
+					<tr>
+						<th class="wideCol">Airline</th>
+						<th class="wideCol">Make/Model</th>
+						<th class="narrowCol">Registration</th>
+						<th class="narrowCol">Manufacturer</th>
+						<th class="arrowCol"></th>
+					</tr>
+					<tr class="planeEntry">
+						<td>Sabena</td>
+						<td>Airbus A320-214</td>
+						<td>OO-SNE</td>
+						<td>Gemini Jets</td>
+						<td><div class="arrow"></div></td>
+					</tr>
+					<tr class="planeDetail">
+						<td colspan="5">
+							<div class="left"><img src="site-graphics/plane/flags/belgium.png"/>Belgium</div>		
+							<div class="center"><img src="site-graphics/plane/airline/sabena.png"/><br/>2000s colors</div>
+							<div class="right"><img src="site-graphics/plane/photo/sabenaA320.png"/></div>
+						</td>
+					</tr>
+					<tr class="planeEntry">
+						<td>Westjet</td>
+						<td>Boeing 737-8CTWL</td>
+						<td>C-GZWS</td>
+						<td>Gemini Jets</td>
+						<td><div class="arrow"></div></td>
+					</tr>
+					<tr class="planeDetail">
+						<td colspan="5">
+							<div class="left"><img src="site-graphics/plane/flags/canada.png"/>Canada</div>		
+							<div class="center"><img src="site-graphics/plane/airline/westjet.png"/><br/>2000 colors</div>
+							<div class="right"><img src="site-graphics/plane/photo/westjetB737800.png"/></div>
+						</td>
+					</tr>					
+					<tr class="planeEntry">
+						<td>China Eastern Airlines</td>
+						<td>Airbus A330-300</td>
+						<td>B-6127</td>
+						<td>Dragon Wings</td>
+						<td><div class="arrow"></div></td>
+					</tr>					
+					<tr class="planeDetail">
+						<td colspan="5">
+							<div class="left"><img src="site-graphics/plane/flags/china.png"/>China</div>		
+							<div class="center"><img src="site-graphics/plane/airline/chinaeastern.png"/><br/>Shanghai 2010 Service Expo</div>
+							<div class="right"><img src="site-graphics/plane/photo/chinaeasternA330.png"/></div>
+						</td>
+					</tr>
+					<tr class="planeEntry">
+						<td>Lufthansa</td>
+						<td>Airbus A320-214</td>
+						<td>D-AIZA</td>
+						<td>Gemini Jets</td>
+						<td><div class="arrow"></div></td>
+					</tr>
+					<tr class="planeDetail">
+						<td colspan="5">
+							<div class="left"><img src="site-graphics/plane/flags/germany.png"/>Germany</div>		
+							<div class="center"><img src="site-graphics/plane/airline/lufthansa.png"/><br/>2010s colors</div>
+							<div class="right"><img src="site-graphics/plane/photo/lufthansaA320.png"/></div>
+						</td>
+					</tr>
+					<tr class="planeEntry">
+						<td>Icelandair</td>
+						<td>Boeing 757-256WL</td>
+						<td>TF-FIU</td>
+						<td>Gemini Jets</td>
+						<td><div class="arrow"></div></td>
+					</tr>
+					<tr class="planeDetail">
+						<td colspan="5">
+							<div class="left"><img src="site-graphics/plane/flags/iceland.png"/>Iceland</div>		
+							<div class="center"><img src="site-graphics/plane/airline/icelandair.png"/><br/>Northern Lights - Heka Aurora colors</div>
+							<div class="right"><img src="site-graphics/plane/photo/icelandairB757.png"/></div>
+						</td>
+					</tr>
+					<tr class="planeEntry">
+						<td>KLM Royal Dutch Airlines</td>
+						<td>Boeing 737-806WL</td>
+						<td>PH-BXZ</td>
+						<td>Gemini Jets</td>
+						<td><div class="arrow"></div></td>
+					</tr>
+					<tr class="planeDetail">
+						<td colspan="5">
+							<div class="left"><img src="site-graphics/plane/flags/netherlands.png"/>Netherlands</div>		
+							<div class="center"><img src="site-graphics/plane/airline/klm1991.png"/><br/>2015 colors</div>
+							<div class="right"><img src="site-graphics/plane/photo/klmB737800.png"/></div>
+						</td>
+					</tr>
+					<tr class="planeEntry">
+						<td>Baikal Airlines</td>
+						<td>Tupolev TU-154M</td>
+						<td>RA-85690</td>
+						<td>Aeroclassics</td>
+						<td><div class="arrow"></div></td>
+					</tr>
+					<tr class="planeDetail">
+						<td colspan="5">
+							<div class="left"><img src="site-graphics/plane/flags/russia.png"/>Russia</div>		
+							<div class="center"><img src="site-graphics/plane/airline/baikal.png"/><br/>1990s colors</div>
+							<div class="right"><img src="site-graphics/plane/photo/baikalTU154.png"/></div>
+						</td>
+					</tr>
+					<tr class="planeEntry">
+						<td>Swiss International Airlines</td>
+						<td>Bombardier CS100</td>
+						<td>C-GWXZ</td>
+						<td>Herpa</td>
+						<td><div class="arrow"></div></td>
+					</tr>
+					<tr class="planeDetail">
+						<td colspan="5">
+							<div class="left"><img src="site-graphics/plane/flags/switzerland.png"/>Switzerland</div>		
+							<div class="center"><img src="site-graphics/plane/airline/swiss.png"/><br/>2003 colors</div>
+							<div class="right"><img src="site-graphics/plane/photo/swissCS100.png"/></div>
+						</td>
+					</tr>
+					<tr class="planeEntry">
+						<td>British Airways</td>
+						<td>BAe/Aerospatiale Concorde</td>
+						<td>G-BOAC</td>
+						<td>Schuco</td>
+						<td><div class="arrow"></div></td>
+					</tr>
+					<tr class="planeDetail">
+						<td colspan="5">
+							<div class="left"><img src="site-graphics/plane/flags/uk.png"/>United Kingdom</div>		
+							<div class="center"><img src="site-graphics/plane/airline/britishairways.png"/><br/>Union Jack colors</div>
+							<div class="right"><img src="site-graphics/plane/photo/britishConcorde.png"/></div>
+						</td>
+					</tr>
+					<tr class="planeEntry">
+						<td>Southwest Airlines</td>
+						<td>Boeing 737-7HWL</td>
+						<td>N708SW</td>
+						<td>Gemini Jets</td>
+						<td><div class="arrow"></div></td>
+					</tr>
+					<tr class="planeDetail">
+						<td colspan="5">
+							<div class="left"><img src="site-graphics/plane/flags/usa.png"/>United States of America</div>		
+							<div class="center"><img src="site-graphics/plane/airline/southwest14.png"/><br/>2015 colors</div>
+							<div class="right"><img src="site-graphics/plane/photo/southwestB737700.png"/></div>
+						</td>
+					</tr>
+					</table>
+				
+					<br/>					
+					<div id="collection-totals">Uncategorized</div>						
+					<table id="collUncat" class="planeList">
+					<tr>
+						<th class="wideCol">Airline</th>
+						<th class="wideCol">Make/Model</th>
+						<th class="narrowCol">Registration</th>
+						<th class="narrowCol">Manufacturer</th>
+						<th class="arrowCol"></th>
+					</tr>
+					<tr class="planeEntry">
+						<td>Alaska Airlines</td>
+						<td>Boeing 737-890WL</td>
+						<td>N563AS</td>
+						<td>Gemini Jets</td>
+						<td><div class="arrow"></div></td>
+					</tr>
+					<tr class="planeDetail">
+						<td colspan="5">
+							<div class="left"><img src="site-graphics/plane/flags/usa.png"/></div>		
+							<div class="center"><img src="site-graphics/plane/airline/alaska.png"/><br/>2016s colors</div>
+							<div class="right"><img src="site-graphics/plane/photo/alaskaB737.png"/></div>
+						</td>
+					</tr>
+					<tr class="planeEntry">
+						<td>Allegiant Air</td>
+						<td>McDonnell Douglas MD-83</td>
+						<td>N865GA</td>
+						<td>Gemini Jets</td>
+						<td><div class="arrow"></div></td>
+					</tr>
+					<tr class="planeDetail">
+						<td colspan="5">
+							<div class="left"><img src="site-graphics/plane/flags/usa.png"/></div>		
+							<div class="center"><img src="site-graphics/plane/airline/allegiant.png"/><br/>2000s colors</div>
+							<div class="right"><img src="site-graphics/plane/photo/allegiantMD80.png"/></div>
+						</td>
+					</tr>
+					<tr class="planeEntry">
+						<td>Amakusa Airlines</td>
+						<td>De Havilland DHC-8-103</td>
+						<td>JA81AM</td>
+						<td>Gemini Jets</td>
+						<td><div class="arrow"></div></td>
+					</tr>
+					<tr class="planeDetail">
+						<td colspan="5">
+							<div class="left"><img src="site-graphics/plane/flags/japan.png"/></div>		
+							<div class="center"><img src="site-graphics/plane/airline/amakusa.png"/><br/>2013 Dolphin colors</div>
+							<div class="right"><img src="site-graphics/plane/photo/amakusaDHC8.png"/></div>
+						</td>
+					</tr>
+					<tr class="planeEntry">
+						<td>American Airlines</td>
+						<td>Boeing 757-223WL</td>
+						<td>N185AN</td>
+						<td>Gemini Jets</td>
+						<td><div class="arrow"></div></td>
+					</tr>
+					<tr class="planeDetail">
+						<td colspan="5">
+							<div class="left"><img src="site-graphics/plane/flags/usa.png"/></div>		
+							<div class="center"><img src="site-graphics/plane/airline/american2013.png"/><br/>2013 colors</div>
+							<div class="right"><img src="site-graphics/plane/photo/americanB757200.png"/></div>
+						</td>
+					</tr>
+					<tr class="planeEntry">
+						<td>JetTrain</td>
+						<td>Douglas DC-9-31</td>
+						<td>N8927E</td>
+						<td>Phoenix</td>
+						<td><div class="arrow"></div></td>
+					</tr>
+					<tr class="planeDetail">
+						<td colspan="5">
+							<div class="left"><img src="site-graphics/plane/flags/usa.png"/></div>		
+							<div class="center"><img src="site-graphics/plane/airline/jettrain.png"/><br/>1980s colors</div>
+							<div class="right"><img src="site-graphics/plane/photo/jettrainDC9.png"/></div>
+						</td>
+					</tr>
+					<tr class="planeEntry">
+						<td>NASA</td>
+						<td>Space Shuttle Orbiter</td>
+						<td>OV-102</td>
+						<td>Dragon Wings</td>
+						<td><div class="arrow"></div></td>
+					</tr>
+					<tr class="planeDetail">
+						<td colspan="5">
+							<div class="left"><img src="site-graphics/plane/flags/usa.png"/></div>		
+							<div class="center"><img src="site-graphics/plane/airline/nasa.png"/><br/>Columbia</div>
+							<div class="right"><img src="site-graphics/plane/photo/nasaShuttleColumbia.png"/></div>
+						</td>
+					</tr>
+					<tr class="planeEntry">
+						<td>OpenSkies British Airways</td>
+						<td>Boeing 757-236WL</td>
+						<td>G-BPEK</td>
+						<td>Gemini Jets</td>
+						<td><div class="arrow"></div></td>
+					</tr>
+					<tr class="planeDetail">
+						<td colspan="5">
+							<div class="left"><img src="site-graphics/plane/flags/france.png"/></div>		
+							<div class="center"><img src="site-graphics/plane/airline/openskies.png"/><br/>2008 colors</div>
+							<div class="right"><img src="site-graphics/plane/photo/openskiesB757200.png"/></div>
+						</td>
+					</tr>
+					</table>					
+					</div>					
+				</div>
+				</div>
+			</div>
+		</div>
+		<div class="yui-b">
+			<!-- PUT SECONDARY COLUMN CODE HERE -->
+			<div id="navigation-pane">
+				<div class="navigation-container">
+					<div class="navH1"></div>
+					<ul class="navPlayers">
+						<li><a href="plane-collection.htm">Collection</a>						
+						<li><a href="plane-wantlist.htm">Wantlist</a>
+						<li><a href="plane-airport.htm">Airport</a>					
+					</ul>
+					<div class="navH1"></div>
+					<ul class="navPlayers">
+					</ul>
+				</div> <!-- END NAVIGATION CONTAINER -->			
+			</div> <!-- END NAVIGATION PANE -->
+		</div>
+	</div>
+	<div id="ft">
+		<!-- PUT FOOTER CODE HERE -->
+		<div id="ft-background">
+			<img style="position:relative;top:2px" id="plane" src="site-graphics/ft-planeicon.png"/>
+			<img id="tryzub" src="site-graphics/tryzub.png"/>			
+			<span>designed by Evgeniy Logvinsky</span>
+			<div id="flagColors"></div>
+		</div>
+		<div id="bottom-black-bar"></div>		
+	</div>
+</div>
+<script src="css/back-to-top.js"></script>
+<a href="#" class="back-to-top"><img src="site-graphics/back-to-top.png"/></a>
+</body>
+</html>
