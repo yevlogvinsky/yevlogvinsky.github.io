@@ -1,0 +1,440 @@
+/*COLORS: blue: #336ca6, green: #3F8181, yellow: #d5d282, lightblue: #2db7d9, gray: #404d5b
+NEW Blue #385373, yellow #fff4dc, greenOriginal #4d9099
+USED: GREEN = #3F8181
+		YELLOW = #D5D282
+		BLUE = #4a749e
+		GRAY = #404d5b*/
+/***************************************** Border *************************************************/
+.link-border a {
+	color: #4a749e;
+	font-weight: 500;
+	-webkit-transition: -webkit-transform 0.2s;
+	transition: transform 0.2s;
+}
+.link-border a #menuText {
+	color: #4a749e;
+	font-weight: 100;
+	font-size: .7em;
+	-webkit-transition: -webkit-transform 0.2s;
+	transition: transform 0.2s;
+}
+.link-border a:hover, .link-border a:focus {
+	-webkit-transform: scale(0.8333);
+	transform: scale(0.8333);
+	color: #4a749e;
+}
+.link-border a::before {
+	position: absolute;
+	top: -2px;
+	left: -7px;
+	box-sizing: content-box;
+	padding: 0 5px;
+	width: 100%;
+	height: 100%;
+	border: 2px solid #4a749e;
+	content: '';
+	opacity: 0;
+	-webkit-transition: opacity 0.2s, -webkit-transform 0.2s;
+	transition: opacity 0.2s, transform 0.2s;
+	-webkit-transform: scale(0.8333);
+	transform: scale(0.8333);
+}
+div .link-border a::before {
+}
+.link-border a:hover::before,
+.link-border a:focus::before {
+	opacity: 1;
+	-webkit-transform: scale(1.2);
+	transform: scale(1.2);
+}
+*, *:after, *:before { -webkit-box-sizing: border-box; box-sizing: border-box; }
+.clearfix:before, .clearfix:after { content: ''; display: table; }
+.clearfix:after { clear: both; }
+section a {
+	position: relative;
+	display: inline-block;
+	outline: none;
+	color: #404d5b;
+	vertical-align: bottom;
+	text-decoration: none;
+	white-space: nowrap;
+}
+section a::before,
+section a::after {
+	pointer-events: none;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-webkit-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+}
+/***************************************** ** *************************************************/
+html, body, .container, .scroller {
+	height: 100%;
+}
+@font-face {
+	font-family: fontMuli;
+	src: url('fonts/Muli-Regular.ttf');
+}
+body {
+	font-family: 'Raleway', Tahoma, sans-serif;
+	font-weight: 300;
+	min-height: 100%;
+	color: #404d5b;
+	margin: 0;
+	fill: purple;
+}
+
+.scroller {
+	overflow-y: scroll;
+}
+
+.scroller,
+.scroller-inner {
+	position: relative;
+}
+
+.container {
+	position: relative;
+	overflow: hidden;
+	background: url("../images/site/crosswordBG.png") repeat;
+}
+
+.headerBanner {
+	margin: 0 auto;
+	background: #3F8181;
+	text-align: center;
+	margin-top: 60px;
+}
+
+.siteLogo {
+	width: 34px;
+	margin-right: 10px;
+	float: left;
+	margin-top: 10px;
+}
+
+.topBar {
+	font-size: 2em;
+}
+
+//a {
+//	color: green;
+//}
+//a:hover {
+//	color: ;
+//
+}
+#menuButton {
+	width: 30px;
+	margin-right: 8px;
+	margin-top: -4px;
+}
+
+.breadcrumbs {
+	float: right;
+	margin: 12px 20px 0px 0px;
+	font-size: 1.2em;
+
+}
+.breadcrumbs li {
+	font-size: .4em;
+	color: #404d5b;
+}
+.breadcrumbs a {
+	color: #4a749e;
+}
+.menuArrow {
+	width: 34px;
+	padding-right: 10px;
+	padding-top: -6px;
+}
+.menuIcon {
+	width: 18px;
+	margin-right: 10px;
+}
+.arrowRight {
+	float: right;
+}
+.mostWanted {
+	min-width: 26px;
+	max-width: 26px;
+	min-height: 26px;
+	max-height: 26px;
+	background-color: #3F8181;
+	font-size: .7em;
+	font-weight: bold;
+	margin-right: 10px;
+	padding-top: 6px;
+}
+#fixedScroll {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 60px;
+	background: url("../images/site/crosswordBG.png") repeat;	
+}
+::-webkit-scrollbar {
+      width: 8px;
+}
+::-webkit-scrollbar-track {
+      background-color: #eee;
+}
+::-webkit-scrollbar-thumb {
+      background-color: #4a749e; 
+}
+.back-to-top {
+	position: fixed;
+	bottom: 8px;
+	right: 12px;
+	display: visible;
+	opacity: 0.9;
+	filter: alpha(opacity=90);	
+}
+/***********************************Progress Bars*************************************/
+#percentBarContainer {
+	text-align: center;
+	margin: 20px; 
+	background: #4a749e;
+	font-family: fontMuli;
+	font-weight: 600;
+}
+.bar-main-container {
+  margin: 10px auto;
+  width: 100%;
+  height: 38px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  font-family: sans-serif;
+  font-weight: normal;
+  font-size: 0.8em;
+  color: #FFF;
+  padding-right: 1%;
+  padding-left: .5%;
+}
+.wrap { padding: 8px; }
+.bar-percentage {
+  float: left;
+  background: rgba(0,0,0,0.25);
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  padding: 2px 0px;
+  width: 10%;
+  height: 22px;
+  font-family: fontMuli; 
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #D5D282;
+}
+.bar-container {
+  float: right;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  height: 22px;
+  background: rgba(0,0,0,0.25);
+  width: 88%;
+  overflow: hidden;
+  z-index: -1;
+}
+.bar {
+	float: left;
+	background: #fff;
+	text-align: center;
+	padding: 2px 0px;
+	height: 22px;
+	font-weight: bold;
+	font-size: 1.2em;
+	font-family: fontMuli;	
+	color: #4a749e;
+	letter-spacing: 1px;
+	height: 100%;
+	-webkit-border-radius: 4px 0px 0px 4px;
+	-moz-border-radius: 4px 0px 0px 4px;
+	border-radius: 4px 0px 0px 4px;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=97)";
+	filter: alpha(opacity=97);
+	-moz-opacity: .97;
+	-khtml-opacity: .97;
+	opacity: .97;
+}
+/*************************************************************************************************/
+.wantListDesc {
+	font-size: .8em;
+	margin: -12px 0px 12px 12px;
+	padding: 0 1em 0.2em;		
+}
+.wantList {
+	margin: 0;
+	padding: 0 1em 0.2em;	
+	line-height: 1.1;
+	font-family: fontMuli;	
+	font-size: 1em;
+}
+@media screen and (min-width: 40em)
+.wantlist {
+	font-size: 1.3vmax;
+}
+.yearlyDivider {
+	height: 1px;
+	background: #404d5b;
+	border-bottom: 1px solid #ddd;
+	margin: 12px 0 10px 0;
+	font-size: .5em;
+}
+.yearlyDivider span {
+	padding: 2px 4px;
+	position: relative; 
+	top: -7px;
+	left: 40px;
+	background-color: #f9f9f9;
+	color: #4a749e;
+	border: 1px solid #ddd;
+}
+#viewGalleryLink {
+	margin-top: -15px;
+	margin-left: 1.2em;
+}
+#viewGalleryLink a {
+	color: #4a749e;
+}
+#viewGalleryLink a:hover {
+	color: #3F8181;
+}
+#nameHeader {
+	font-family: fontMuli;
+}
+
+
+
+.card.wantListCard {
+	font-family: 'fontMuli', Tahoma, sans-serif;
+	border: 1px solid #404d5b;
+	text-align: center;
+}
+.card.wantListCard img {
+	border-bottom: 1px solid #ffffff;
+}
+.card.wantListCard a {
+	font-family: 'fontMuli', Tahoma, sans-serif;
+	color: #4a749e;
+}
+.card.wantListCard a:hover {
+	color: #ffffff;
+	background: rgba(0,0,0,0.2);
+}
+.card.wantListCard a:hover .cardSection{
+	color: #ffffff;
+	background: red;
+}
+.card-section {
+	font-family: 'fontMuli';
+	color: #4a749e;
+}
+.card-section:hover {
+	color: #ffffff;
+	background-color: #4a749e;
+}
+
+
+/*************************************************************************************/
+/*--------------------------------- Menu Colors -------------------------------------*/
+.mp-menu h2 {
+	margin: 0;
+	padding: .4em;
+	color: #284e74;
+	text-shadow: 0 0 1px rgba(0,0,0,0.1);
+	font-weight: 200;
+	font-size: 1.8em;
+}
+.mp-menu a {
+	color: white;
+}
+.mp-menu ul li a:hover,
+.mp-level > ul > li:first-child > a:hover {
+	background: rgba(0,0,0,0.2);
+	box-shadow: inset 0 -1px rgba(0,0,0,0);
+	color: #fff4dc;
+}
+.mp-back {
+	background: rgba(0,0,0,0.1);
+	outline: none;
+	color: #fff4dc;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 700;
+	display: block;
+	font-size: 0.8em;
+	padding: 1em;
+	position: relative;
+	box-shadow: inset 0 1px rgba(0,0,0,0.1);
+	-webkit-transition: background 0.3s;
+	-moz-transition: background 0.3s;
+	transition: background 0.3s;
+}
+.mp-level {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #4a749e;
+	-webkit-transform: translate3d(-100%, 0, 0);
+	-moz-transform: translate3d(-100%, 0, 0);
+	transform: translate3d(-100%, 0, 0);
+}
+/*---------------------------------------------------------------------------------------*/
+
+/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
+.clearfix:before,
+.clearfix:after {
+	display: table;
+	content: " ";
+	table-layout: fixed;
+}
+
+.clearfix:after {
+	clear: both;
+}
+/****************************************************************************************/
+.content {
+	padding: 1em 2em;
+	max-width: 1200px;
+	margin: 0 auto;
+	font-family: fontMuli;
+	font-weight: 500;
+}
+.block {
+	float: left;
+	padding-top: .1em ;
+}
+.block-40 {
+	width: 40%;
+}
+.block-60 {
+	width: 60%;
+}
+.block-80 {
+	width: 80%;
+}
+.block p {
+	margin: 0;
+	padding: 0 1em 0.2em;
+	font-size: 1.1em;
+	line-height: 1;
+	font-family: fontMuli;
+}
+@media screen {
+	.block {
+		float: none;
+		width: 100% !important;
+		padding: 6px 0px 6px 12px;
+	}
+}
+@media screen and (max-width: 25em) {
+   .wantlist { font-size: 2em; }
+	
+}
+/****************************************************************************************/
+
